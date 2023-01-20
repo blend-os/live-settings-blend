@@ -9,7 +9,5 @@ source=('50_blend-settings.gschema.override')
 sha256sums=('e06ade9649d5e3f0cd25110edd59a11cabfc956560cf7d4c25c5c2bc43562533')
 
 package() {
-	cd "$pkgdir"
-
-	install -m644 "$srcdir"/50_blend-settings.gschema.override usr/share/glib-2.0/schemas/
+	mkdir -p "$pkgdir"/usr/share/glib-2.0/schemas/; cp "$srcdir"/50_blend-settings.gschema.override "$pkgdir"/usr/share/glib-2.0/schemas/
 }
