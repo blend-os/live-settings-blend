@@ -3,4 +3,5 @@
 !.gitignore
 !PKGBUILD
 !50_blend-settings.gschema.override
+!installer-autostart.desktop
 !.SRCINFO
